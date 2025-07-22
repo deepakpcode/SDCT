@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+    --button-color:#ff7600;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+
+
+#title-hero{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    border-image-source: linear-gradient( to right, rgba(0, 83, 63, 0.7), rgba(0, 73, 73, 0.7));
+    border-image-slice: fill 1;
+}
+.header-text{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-text h1{
+    font-size: 5rem !important;
+    font-family:'Poppins' !important;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+
+.about{
+    display: flex;
+    border-radius: 30px;
+    margin: 7vh 3vh;
+    background: linear-gradient(to right,#ebfeda,#b8eef0);
+}
+.aboutp-content{
+    width: 60%;
+    padding: 7vh;
+}
+.aboutp-content h2{
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Lora';
+    font-style: italic;
+}
+.aboutp-content h3{
+     font-size: 3rem;
+     font-family: 'Lora';
+    font-style: italic;
+    margin: 2rem 0 1rem;
+}
+.aboutp-content p{
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    line-height: 2.5rem;
+}
+.aboutp-img{
+    width: 40%;
+    height: auto;
+    background: url(../images/about-img-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+@media screen and (max-width: 768px){
+    .about{
+        flex-direction: column;
+        margin: 7vh 10px;
+    }
+    .aboutp-content{
+        width: 100%;
+        padding: 20px;
+    }
+    .aboutp-content h2{
+        font-size: 3.3rem;
+    }
+    .aboutp-content h3{
+        font-size: 2.9rem;
+    }
+    .aboutp-content p{
+        font-size: 18px;
+    }
+    .aboutp-img{
+        width: 100%;
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 1490px){
+    #title-hero{
+        height: 45vh;
+    }
+    .about{
+        margin: 7vh 10vh;
+    }
+    .aboutp-content{
+        padding: 8vh;
+    }
+    .aboutp-content h2{
+        font-size: 4.5rem;
+    }
+    .aboutp-content h3{
+        font-size: 3.2rem;
+    }
+}
+
+/* Why Us Css */
+#why-sdct .headings h2{
+    color: var(--button-color);
+}
+.why-us-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.why-us{
+    width: 23%;
+    height: 40vh;
+    padding: 20px;
+    
+}
+.why-us div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(to right,#ebfeda,#b8eef0);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.why-us div i{
+    font-size: 3.5rem;
+    color: rgb(90, 88, 88);
+}
+.why-us h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.why-us p{
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(77, 77, 77);
+}
+@media screen and (max-width: 768px){
+    #why-sdct .headings h2{
+        font-size: 3.8rem;
+    }
+    .why-us-container{
+        flex-direction: column;
+    }
+    .why-us{
+        width: 100%; 
+        height: 35vh;
+        padding: 0 40px;
+    }
+}
+
+
+#volunteer{
+    background: linear-gradient(to right,#ebfeda,#b8eef0);
+    padding-bottom: 5vh;
+    margin-top: 8vh;
+}
+#volunteer h2{
+    color: black;
+}
+
+@media screen and (max-width: 768px){
+    #volunteer{
+        padding-bottom: 1vh;
+    }
+}
+@media screen and (min-width: 1490px){
+    #volunteer{
+        margin-top: 0vh;
+    }
+}
